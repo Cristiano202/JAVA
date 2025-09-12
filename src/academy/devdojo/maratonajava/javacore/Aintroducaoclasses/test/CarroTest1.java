@@ -14,7 +14,7 @@ public class CarroTest1 {
 
         System.out.println("-----");
         carro1.nome="Fiat Estrada";
-        carro1.modelo="freedom";
+        carro1.modelo=" freedom";
         carro1.ano=2021;
 
         System.out.println(carro1.nome +"\n"+carro1.modelo+"\n"+carro1.ano);
