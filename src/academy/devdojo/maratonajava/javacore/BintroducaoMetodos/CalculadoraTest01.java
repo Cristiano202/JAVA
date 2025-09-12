@@ -7,5 +7,7 @@ public class CalculadoraTest01 {
         Calculadora calculadora = new Calculadora();
         calculadora.somaDoisNmeros();
         System.out.println("Fim");
+        calculadora.subtraiDoisNumeros();
+
     }
 }
