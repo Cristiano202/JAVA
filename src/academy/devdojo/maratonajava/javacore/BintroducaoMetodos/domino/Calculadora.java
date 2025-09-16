@@ -32,5 +32,21 @@ public class Calculadora {
             System.out.println("O numero 1 foi alterado para "+ num1+"\nO numero 2 foi alterado para "+ num2);
         }
     }
+    public  void somaArry(int[] numeros){
+        int soma =0;
+        for(int i :numeros){
+            soma+=i;
+
+        }
+        System.out.println(soma);
+    }
+    public  void somaVarArgs(int ...numeros){
+        int soma =0;
+        for(int i :numeros){
+            soma+=i;
+
+        }
+        System.out.println(soma);
+    }
 
 }
