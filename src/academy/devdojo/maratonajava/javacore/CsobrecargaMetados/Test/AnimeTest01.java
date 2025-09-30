@@ -8,6 +8,7 @@ public class AnimeTest01 {
         Anime anime =new Anime();
         anime.init("cris","tv",12,"Ação");
         anime.emprime();
+
     }
 
 }
