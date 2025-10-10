@@ -4,6 +4,20 @@ public class Pessoa {
     protected String nome;
     protected String cpf;
     protected Endereco endereco;
+
+    static {
+        System.out.println("Dentro do bloco inicialização de pesssoa");
+
+    }
+
+    {
+        System.out.println("Dentro do bloco não inicialização  de pesssoa1");
+    }
+    {
+        System.out.println("Dentro do bloco não inicialização  de pesssoa2");
+    }
+
+
     public Pessoa(String nome){
         this.nome=nome;
     }
