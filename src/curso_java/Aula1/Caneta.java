@@ -1,16 +1,16 @@
-package curso_java;
+package curso_java.Aula1;
 
 public class Caneta {
-    String modelo;
-    String cor;
-    float ponta;
-    int carga;
-    boolean tampada;
-    void status(){
+   public String modelo;
+   public String cor;
+   private   float ponta;
+   protected int carga;
+   protected boolean tampada;
+   public void status(){
         System.out.println("Uma caneta "+this.cor);
         System.out.println("Estar tampada ? "+this.tampada);
     }
-    void rabiscar(){
+   public void rabiscar(){
         if (this.tampada==true){
             System.out.println("Erro ! não pode rabiscar ");
         }
@@ -18,10 +18,10 @@ public class Caneta {
             System.out.println("Estou rabiscando ");
         }
     }
-    void tampar(){
+   protected void tampar(){
         this.tampada=true;
     }
-    void destampar(){
+   protected void destampar(){
         this.tampada=false;
     }
 
