@@ -112,10 +112,20 @@ public class Lutador {
     }
 
     public void apresentar(){
-
+        System.out.println("-----------------------------------------------");
+        System.out.println("Chegouu a hora ! Apresentamos o lutador "+this.getNome());
+        System.out.println("Diretamente de "+this.getNacionalidade());
+        System.out.println("Com "+this.getIdade()+" anos e "+this.getAltura()+" altura ");
+        System.out.println("Pesando "+this.getPeso()+" kg");
+        System.out.println(this.getVitoria()+" vitorias "+this.getDerrotas()+" Derrotas ");
+        System.out.println(this.getEmpates()+" Empates");
 
     }
     public void status(){
+        System.out.println(this.getNome()+" é um peso "+this.getCategoria());
+        System.out.println("Ganhou "+this.getVitoria()+" vezes");
+        System.out.println("Empatou "+this.getEmpates()+" vezes");
+        System.out.println("Derrota "+this.getDerrotas()+" vezes");
 
     }
     public void ganharLuta(){
