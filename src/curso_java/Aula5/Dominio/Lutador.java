@@ -4,20 +4,20 @@ public class Lutador {
     private String nome;
     private  String nacionalidade;
     private int idade;
-    private float altura;
-    private float peso;
+    private double altura;
+    private double peso;
     private String categoria;
     private int vitoria;
     private int derrotas;
     private int empates;
 
-    public Lutador(String nome, String nacionalidade, int idade, float altura,
-                   float peso, int vitoria, int derrotas, int empates) {
+    public Lutador(String nome, String nacionalidade, int idade, double altura,
+                   double peso, int vitoria, int derrotas, int empates) {
         this.nome = nome;
         this.nacionalidade = nacionalidade;
         this.idade = idade;
         this.altura = altura;
-        this.peso = peso;
+        this.setPeso(peso);
         this.vitoria = vitoria;
         this.derrotas = derrotas;
         this.empates = empates;
@@ -47,19 +47,19 @@ public class Lutador {
         this.idade = idade;
     }
 
-    public float getAltura() {
+    public double getAltura() {
         return altura;
     }
 
-    public void setAltura(float altura) {
+    public void setAltura(double altura) {
         this.altura = altura;
     }
 
-    public float getPeso() {
+    public double getPeso() {
         return peso;
     }
 
-    public void setPeso(float peso) {
+    public void setPeso(double peso) {
         this.peso = peso;
         this.setCategoria();
     }
