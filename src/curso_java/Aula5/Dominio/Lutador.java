@@ -11,16 +11,8 @@ public class Lutador {
     private int derrotas;
     private int empates;
 
-    public Lutador(String nome, String nacionalidade, int idade, double altura,
-                   double peso, int vitoria, int derrotas, int empates) {
-        this.nome = nome;
-        this.nacionalidade = nacionalidade;
-        this.idade = idade;
-        this.altura = altura;
-        this.setPeso(peso);
-        this.vitoria = vitoria;
-        this.derrotas = derrotas;
-        this.empates = empates;
+    public Lutador() {
+
     }
 
     public String getNome() {
