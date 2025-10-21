@@ -41,9 +41,9 @@ public class LutadorTest {
         System.out.println("=== LUTADORES CADASTRADOS ===");
         for (int i = 0; i < l.length; i++) {
             System.out.println("\n--- Lutador " + (i + 1) + " ---");
-            l[i].apresentar(); // ✅ imprime diretamente
+            l[i].apresentar(); //  imprime diretamente
         }
-
+        System.out.println("=============");
         sc.close();
     }
 }
