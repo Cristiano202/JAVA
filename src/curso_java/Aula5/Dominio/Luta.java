@@ -32,6 +32,7 @@ public class Luta {
             this.desafiante.apresentar();
 
             Random aleatorio=new Random();
+            int vencedor=aleatorio.nextInt(3);
         }else {
             System.out.println("A luta não pode acontecer!!");
         }
