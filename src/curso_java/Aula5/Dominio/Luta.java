@@ -1,5 +1,7 @@
 package curso_java.Aula5.Dominio;
 
+import java.util.Random;
+
 public class Luta {
     private Lutador desafiado;
     private Lutador desafiante;
@@ -11,7 +13,7 @@ public class Luta {
             this.aprovado=true;
             this.desafiado=l1;
             this.desafiante=l2;
-            System.out.println("");
+
 
         }
         else {
@@ -22,6 +24,17 @@ public class Luta {
 
     }
     public void lutar(){
+        if(this.aprovado){
+            System.out.println("***DESAFIADO***");
+
+            this.desafiado.apresentar();
+            System.out.println("***DESAFIANTE***");
+            this.desafiante.apresentar();
+
+            Random aleatorio=new Random();
+        }else {
+            System.out.println("A luta não pode acontecer!!");
+        }
 
     }
 
