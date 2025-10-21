@@ -6,7 +6,19 @@ public class Luta {
     private int rounds;
     private boolean aprovado;
 
-    public void marcarLuta(){
+    public void marcarLuta(Lutador l1,Lutador l2){
+        if(l1.getCategoria().equals(l2.getCategoria()) && l1!=l2){
+            this.aprovado=true;
+            this.desafiado=l1;
+            this.desafiante=l2;
+            System.out.println("");
+
+        }
+        else {
+            this.aprovado=false;
+            this.desafiado=null;
+            this.desafiante=null;
+        }
 
     }
     public void lutar(){
