@@ -31,7 +31,7 @@ public class ContaBanco {
         }
         System.out.println("Conta aberta com sucesso!");
     }
-    public void fecharConta(){
+    public void      fecharConta(){
         if(this.getSaldo()>0){
             System.out.println("Conta não pode ser feixada porque ainda  tem dinheiro");
         }
@@ -44,8 +44,8 @@ public class ContaBanco {
         }
     }
     public void depositar(float v){
-        if(this.getStatus()){
-            this.setSaldo(this.getSaldo()+v);
+        if (this.getStatus()){
+           this.setSaldo(this.getSaldo()+v);
             System.out.println("Depósito realizado com sucesso na conta "+this.getDono());
         }
         else {
@@ -59,7 +59,7 @@ public class ContaBanco {
                 System.out.println("Saque realizado na conta de "+this.getDono());
             }
             else {
-                System.out.println("Saldo insuficiente!");
+                    System.out.println("Saldo insuficiente!");
             }
         }
         else {
