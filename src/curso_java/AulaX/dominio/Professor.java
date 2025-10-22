@@ -4,7 +4,8 @@ public class Professor {
     private String especialidade;
     private float salario;
 
-    public void receberAumento(){
+    public void receberAumento(float aum){
+        this.salario+=aum;
 
     }
 
