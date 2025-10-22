@@ -1,6 +1,6 @@
 package curso_java.AulaX.dominio;
 
-public class Professor {
+public class Professor extends Pessoa{
     private String especialidade;
     private float salario;
 
