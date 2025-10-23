@@ -14,6 +14,14 @@ public class Reptil extends Animal{
 
     }
 
+    public String getCorEscama() {
+        return corEscama;
+    }
+
+    public void setCorEscama(String corEscama) {
+        this.corEscama = corEscama;
+    }
+
     @Override
     public void emitirSom() {
         System.out.println("Som de réptil");

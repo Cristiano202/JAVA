@@ -16,7 +16,18 @@ public class Peixe extends Animal{
 
     @Override
     public void emitirSom() {
-        System.out.println("Soltou uma bolha");
+        System.out.println("Peixe não faz som");
 
+    }
+    public void soltarBolha(){
+        System.out.println("Soltou uma bolha");
+    }
+
+    public String getCorEscama() {
+        return corEscama;
+    }
+
+    public void setCorEscama(String corEscama) {
+        this.corEscama = corEscama;
     }
 }
