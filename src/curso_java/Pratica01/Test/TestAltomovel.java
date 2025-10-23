@@ -12,7 +12,7 @@ public class TestAltomovel {
         Moto m1=new Moto();
         int res=0;
         do{
-            System.out.println("1-CADASTRAR MOTO");
+            System.out.println("\n1-CADASTRAR MOTO");
             System.out.println("2-CADASTRAR CARRO");
             System.out.println("0-Sair");
             System.out.print("Informe qual altomovel você quer cadastrar: ");
@@ -26,6 +26,18 @@ public class TestAltomovel {
                 sc.nextLine();
                 System.out.print("Informe o modelo: ");
                 m1.setModelo(sc.nextLine());
+            } else if (res==2) {
+                System.out.print("Informe o nome: ");
+                c1.setNome(sc.nextLine());
+                System.out.print("Informe a placa: ");
+                c1.setPlaca(sc.nextInt());
+                sc.nextLine();
+                System.out.print("Informe o modelo: ");
+                c1.setModelo(sc.nextLine());
+
+            }
+            else {
+                System.out.println("\nPOR FAVOR ESCOLHAR UMA OPÇÃO");
             }
         }while(res !=0);
     }
