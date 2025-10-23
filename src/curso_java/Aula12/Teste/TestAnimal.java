@@ -21,7 +21,14 @@ public class TestAnimal {
         Ave ave=new Ave();
 
         System.out.println("---------------");
+        System.out.println("Cachorro");
         cachorro.emitirSom();
+        System.out.println("-------");
+        System.out.println("Ave");
+
         ave.locomover();
+        System.out.println("----------");
+        System.out.println("Canguru");
+        canguru.locomover();
     }
 }
