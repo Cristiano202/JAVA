@@ -17,9 +17,10 @@ public class PessoaTest01 {
         v1.setSexo("M");
         System.out.println(v1.toString());
 
-        p2.setNome("Cris ");
-        p2.setIdade(15);
-        p2.setSexo("M");
+        p2.setNome("Cristiano ");
+        p2.setIdade(150);
+        p2.setSexo("Mm");
+        System.out.println(p2.toString());
 
         p3.setNome("Cris ");
         p3.setIdade(15);
