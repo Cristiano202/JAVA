@@ -3,16 +3,19 @@ package curso_java.AulaX.Test;
 import curso_java.AulaX.dominio.Aluno;
 import curso_java.AulaX.dominio.Pessoa;
 import curso_java.AulaX.dominio.Professor;
+import curso_java.AulaX.dominio.Visitante;
 
 public class PessoaTest01 {
     public static void main(String[] args) {
-        Pessoa p1=new Pessoa();
+        //Pessoa p1=new Pessoa();
         Aluno p2=new Aluno();
         Professor p3=new Professor();
+        Visitante v1=new Visitante();
 
-        p1.setNome("Cris ");
-        p1.setIdade(15);
-        p1.setSexo("M");
+        v1.setNome("Cris ");
+        v1.setIdade(15);
+        v1.setSexo("M");
+        System.out.println(v1.toString());
 
         p2.setNome("Cris ");
         p2.setIdade(15);
