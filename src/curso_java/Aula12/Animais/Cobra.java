@@ -8,4 +8,8 @@ public class Cobra extends Reptil {
         System.out.println("Ratejando");
 
     }
+    @Override
+    public void alimentar(){
+        System.out.println("Caçando..");
+    }
 }
