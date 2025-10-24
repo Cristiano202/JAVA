@@ -4,4 +4,9 @@ import curso_java.Aula12.Dominio.Mamifero;
 import curso_java.Aula12.Dominio.Peixe;
 
 public class Golfish extends Peixe {
+    @Override
+    public void locomover() {
+        System.out.println("Golfish nadando..");
+
+    }
 }

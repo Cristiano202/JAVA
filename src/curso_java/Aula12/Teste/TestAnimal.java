@@ -23,6 +23,7 @@ public class TestAnimal {
         System.out.println("---------------");
         System.out.println("Cachorro");
         cachorro.emitirSom();
+        cachorro.locomover();
         System.out.println("-------");
         System.out.println("Ave");
 
@@ -30,5 +31,16 @@ public class TestAnimal {
         System.out.println("----------");
         System.out.println("Canguru");
         canguru.locomover();
+
+
+        System.out.println("----------");
+        System.out.println("Golfish");
+        golfish.locomover();
+
+
+        System.out.println("----------");
+        System.out.println("Cobra");
+        cobra.alimentar();
+        cobra.locomover();
     }
 }

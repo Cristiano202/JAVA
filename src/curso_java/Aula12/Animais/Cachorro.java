@@ -8,5 +8,10 @@ public class Cachorro extends Mamifero {
         System.out.println("Cachorro latindo");
 
     }
+    @Override
+    public void locomover() {
+        System.out.println("Cachorro correndo");
+
+    }
 
 }
