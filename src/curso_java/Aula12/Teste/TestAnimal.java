@@ -37,6 +37,7 @@ public class TestAnimal {
         System.out.println("----------");
         System.out.println("Golfish");
         golfish.locomover();
+        golfish.emitirSom();
 
 
         System.out.println("----------");
