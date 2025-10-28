@@ -44,5 +44,6 @@ public class TestAnimal {
         System.out.println("Cobra");
         cobra.alimentar();
         cobra.locomover();
+        cobra.emitirSom();
     }
 }
