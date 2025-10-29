@@ -12,6 +12,15 @@ public class Main {
 
         lb.emitirSom();
         cc.emitirSom();
+        System.out.println("------------CACHORRO-------------");
+        cc.reagir("Ola");
+        cc.reagir("Vai apanhar");
+        cc.reagir(11,45);
+        cc.reagir(21,00);
+        cc.reagir("verdadeiro");
+        cc.reagir("false");
+        cc.reagir(2,12.5f);
+        cc.reagir(17,4.5f);
 
     }
 }
