@@ -18,6 +18,15 @@ public class Cachorro extends Lobo{
 
     }
     public void reagir(int hora, int min){
+        if(hora<12){
+            System.out.println("Abanar");
+        }
+        else if(hora>=18){
+            System.out.println("Ignorar");
+        }
+        else {
+            System.out.println("Abanar e latir");
+        }
 
     }
     public void reagir(Boolean dono) {
