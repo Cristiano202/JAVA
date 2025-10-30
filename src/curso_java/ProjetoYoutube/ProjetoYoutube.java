@@ -7,5 +7,7 @@ public class ProjetoYoutube {
         video[1]=new Video("Aula 2 de poo");
         video[2]=new Video("Aula 3 de poo");
 
+        System.out.println(video[0].toString());
+
     }
 }
