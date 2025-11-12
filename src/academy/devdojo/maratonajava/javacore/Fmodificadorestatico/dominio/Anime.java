@@ -5,7 +5,7 @@ public class Anime {
     private static int[] episodios;
 
    static      {
-        System.out.println("Dentro do bloco de iniialização");
+        System.out.println("Dentro do bloco de incialização");
         episodios=new int[100];
         int i=0;
         for (i=0;i<episodios.length;i++){
