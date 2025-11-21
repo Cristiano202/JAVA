@@ -19,6 +19,14 @@ public class Smarphone {
         return  seriaNumber != null && seriaNumber.equals(smarphone.seriaNumber);
     }
 
+    //  se x.equals(y)==true , y.hashCode()== x.hashCode
+    // y.hastCode()== x.hastCode não necessariamente o equals de y.equals(x) tem que ser true
+    //x.equals(y)==false
+    //y.hashcode
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
 
     public String getSeriaNumber() {
         return seriaNumber;
