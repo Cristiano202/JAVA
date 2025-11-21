@@ -43,4 +43,6 @@ public class Smarphone {
     public void setMarca(String marca) {
         this.marca = marca;
     }
+
+    /*Aula sobre coleção */
 }
