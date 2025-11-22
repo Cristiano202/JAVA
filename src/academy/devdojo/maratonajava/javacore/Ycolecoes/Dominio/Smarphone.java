@@ -44,5 +44,12 @@ public class Smarphone {
         this.marca = marca;
     }
 
+    @Override
+    public String toString() {
+        return "Smarphone{" +
+                "seriaNumber='" + seriaNumber + '\'' +
+                ", marca='" + marca + '\'' +
+                '}';
+    }
     /*Aula sobre coleção */
 }
