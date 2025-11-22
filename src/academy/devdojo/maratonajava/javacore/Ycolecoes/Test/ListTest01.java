@@ -1,8 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Ycolecoes.Test;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class ListTest01 {
     public static void main(String[] args) {
@@ -23,10 +21,16 @@ public class ListTest01 {
             }
         }while (op !=0);
 
-        nomes2.addAll(nomes);
 
-        for(String nome : nomes2){
+
+        nomes2.add("cris");
+        Set<String> conjunto = new LinkedHashSet<>(nomes); // mantém ordem
+        conjunto.addAll(nomes2);
+
+        for(String nome : nomes){
             System.out.println(nome);
+
+
         }
     }
 }
