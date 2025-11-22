@@ -8,6 +8,7 @@ public class ListTest01 {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         List<String> nomes=new ArrayList<>();
+        List<String>nomes2=new ArrayList<>();
         int op;
         String nomePessoa;
         do{
@@ -22,7 +23,9 @@ public class ListTest01 {
             }
         }while (op !=0);
 
-        for(String nome : nomes){
+        nomes2.addAll(nomes);
+
+        for(String nome : nomes2){
             System.out.println(nome);
         }
     }
