@@ -14,8 +14,8 @@ public class StackOverflowTest01 {
     private static void criarNovoArquivo(){
         File file =new File("arquivo\\test.txt");
         try{
-            boolean criado = file.createNewFile();
-            System.out.println("Arquivo criado "+criado);
+            boolean iscriado = file.createNewFile();
+            System.out.println("Arquivo criado "+iscriado);
 
         }catch (IOException e){//Nunca deixa o catch em branco
             e.printStackTrace();
