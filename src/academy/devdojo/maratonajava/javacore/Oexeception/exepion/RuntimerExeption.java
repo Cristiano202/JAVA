@@ -7,8 +7,10 @@ public class RuntimerExeption {
             System.out.println("Escrevendo dentro do arquivo");
             System.out.println("Fechando recurso liberado pelo SO");
         }catch (Exception e ){
-            System.out.println("Fechando recurso pelo SO");
+
             e.printStackTrace();
+        }finally {
+            System.out.println("Fechando recurso pelo SO!!!");
         }
     }
 }
