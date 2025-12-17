@@ -1,7 +1,8 @@
-package academy.devdojo.maratonajava.javacore.Ycolecoes.Dominio;
+package academy.devdojo.maratonajava.javacore.Ycolecoes.Test;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class BinarySearchTesto1 {
@@ -13,5 +14,7 @@ public class BinarySearchTesto1 {
         numeros.add(3);
         Collections.sort(numeros);
         System.out.println(numeros);
+        numeros.sort(Comparator.naturalOrder());
+        System.out.println(Collections.binarySearch(numeros,2));
     }
 }
