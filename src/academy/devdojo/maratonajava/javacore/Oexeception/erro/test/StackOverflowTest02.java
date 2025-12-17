@@ -3,15 +3,15 @@ package academy.devdojo.maratonajava.javacore.Oexeception.erro.test;
 import java.io.File;
 import java.io.IOException;
 
-public class StackOverflowTest01 {
-    public static void main(String[] args) {
+public class StackOverflowTest02 {
+    public static void main(String[] args)throws IOException {
        criarNovoArquivo();
 
 
     }
     //RuntimeException é um erro   que o programandor devia ter prestado mais atenção
     //Exeption
-    private static void criarNovoArquivo(){
+    public static void criarNovoArquivo()throws IOException{
         File file =new File("arquivo\\test.txt");
         try{
             boolean iscriado = file.createNewFile();
@@ -19,6 +19,7 @@ public class StackOverflowTest01 {
 
         }catch (IOException e){//Nunca deixa o catch em branco
             e.printStackTrace();
+            throw  e;
 
         }
 
