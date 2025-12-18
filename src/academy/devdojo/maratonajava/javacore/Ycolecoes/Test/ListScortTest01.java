@@ -19,5 +19,6 @@ public class ListScortTest01 {
         for(String manga:mangas){
             System.out.println(manga);
         }
+
     }
 }
