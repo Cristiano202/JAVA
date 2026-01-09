@@ -11,7 +11,27 @@ class ThreadExample extends Thread {
         System.out.println(Thread.currentThread().getName());
 
         for(int i=0;i<1000;i++){
-            System.out.println(c);
+            System.out.print(c);
+            if (i%100==0){
+                System.out.println();
+            }
+        }
+    }
+}
+class theadExampleRunnable implements Runnable{
+
+    private char c;
+
+    public void ThreadExampleRunnable (char c ){
+        this.c=c;
+    }
+
+    @Override
+    public void run() {
+        System.out.println(Thread.currentThread().getName());
+
+        for(int i=0;i<1000;i++){
+            System.out.print(c);
             if (i%100==0){
                 System.out.println();
             }
@@ -22,8 +42,18 @@ class ThreadExample extends Thread {
 public class ThreadTest01 {
 
     public static void main(String[] args) {
-        ThreadExample t1 =new ThreadExample('m');
-        t1.run();
+//        ThreadExample t1 =new ThreadExample('m');
+//        ThreadExample t2 =new ThreadExample('c');
+//        ThreadExample t3 =new ThreadExample('v');
+//        ThreadExample t4 =new ThreadExample('f');
+        Thread t1 = new Thread(new ThreadExample ('A'));
+        Thread t2 = new Thread(new ThreadExample ('B'));
+        Thread t3 = new Thread(new ThreadExample ('C'));
+        Thread t4 = new Thread(new ThreadExample ('D'));
+        t1.start();
+        t2.start();
+        t3.start();
+        t4.start();
 
     }
 }
